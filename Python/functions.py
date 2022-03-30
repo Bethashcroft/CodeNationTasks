@@ -33,14 +33,34 @@
 
 # print("The temperature is {} F".format(get_fahrenheit(15)))
 
-order_count = 0
+# order_count = 0
 
-def pizza_order(topping1,topping2,topping3):
-    global order_count
-    print(f"Your pizza got {topping1}, {topping2} and {topping3} on it")
-    order_count += 1
-    print(f"order number: {order_count}")
+# def pizza_order(topping1,topping2,topping3):
+#     global order_count
+#     print(f"Your pizza got {topping1}, {topping2} and {topping3} on it")
+#     order_count += 1
+#     print(f"order number: {order_count}")
     
-pizza_order("pepperoni","onion","pepper")
-pizza_order("ham", "sweetcorn", "beef")
+# pizza_order("pepperoni","onion","pepper")
+# pizza_order("ham", "sweetcorn", "beef")
 
+
+def cash_withdrawal():
+    attempts = 3
+    user_pin = 8765
+    money = 1500
+    enter_pin = int(input("Please enter your pin number: "))
+    while attempts != 0:
+        if enter_pin != user_pin:
+            attempts -= 1
+            print("You have entered the wrong PIN number. You have", attempts, "attempts left.") 
+        else:
+            UserWithdraw = int(input("Please enter the amount you would like to withdraw: "))
+            
+            print("£", UserWithdraw, "has been withdrawn. The balance is £", money - UserWithdraw)
+        break   
+
+
+cash_withdrawal()
+
+        
