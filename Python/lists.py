@@ -7,22 +7,22 @@
 # print(beths_tunes)
 
 
-# website_list = [
-#     "Facebook",
-#     "Twitter",
-#     "Wikipedia"
-# ]
+website_list = [
+    "Facebook",
+    "Twitter",
+    "Wikipedia"
+]
 
-# print(website_list)
+print(website_list)
 
-# website_list.append("YouTube")
-# website_list.append("eBay")
+website_list.append("YouTube")
+website_list.append("eBay")
 
-# print(website_list)
+print(website_list)
 
-# website_list.pop()
+website_list.pop()
 
-# print(website_list)
+print(website_list)
 
 
 favourite_artists = [
@@ -53,5 +53,8 @@ more_artists = [
 
 favourite_artists.extend(more_artists)
 print(favourite_artists)
+
+counting_artists = favourite_artists.count("Blink-182")
+print(counting_artists)
 
 
