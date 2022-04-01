@@ -45,22 +45,23 @@
 # pizza_order("ham", "sweetcorn", "beef")
 
 
-def cash_withdrawal():
-    attempts = 3
-    user_pin = 8765
-    money = 1500
-    enter_pin = int(input("Please enter your pin number: "))
-    while attempts != 0:
-        if enter_pin != user_pin:
-            attempts -= 1
-            print("You have entered the wrong PIN number. You have", attempts, "attempts left.") 
-        else:
-            UserWithdraw = int(input("Please enter the amount you would like to withdraw: "))
+# from ast import Num
+
+
+# def cash_withdrawal():
+#     attempts = 3
+#     user_pin = 8765
+#     money = 1500
+#     enter_pin = int(input("Please enter your pin number: "))
+#     while attempts != 0:
+#         if enter_pin != user_pin:
+#             attempts -= 1
+#             print("You have entered the wrong PIN number. You have", attempts, "attempts left.") 
+#         else:
+#             UserWithdraw = int(input("Please enter the amount you would like to withdraw: "))
             
-            print("£", UserWithdraw, "has been withdrawn. The balance is £", money - UserWithdraw)
-        break   
+#             print("£", UserWithdraw, "has been withdrawn. The balance is £", money - UserWithdraw)
+#         break   
 
 
-cash_withdrawal()
-
-        
+# cash_withdrawal()
