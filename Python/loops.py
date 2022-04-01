@@ -55,3 +55,38 @@ while rand_num != my_num:
     rand_num = random.randint(0,50)
     
 print("You've found {}!".format(my_num))
+
+# Activity(1): 
+# Create a for loop that prints "hello world" 13 times. Now, convert this into a while loop that does the same job. 
+
+for i in range(13):
+    print("hello world")
+i = 0
+while i < 13:
+    print("hello world")
+    i += 1
+
+
+# Activity(2): 
+# Create a variable, use a loop to generate a random number between 1 and 30 six times. 
+# For each random number generated, check if this number of divisible by 7 or not.
+
+import random
+for i in range(6):
+    num = random.randint(1, 30)
+    if num % 7 == 0:
+        print(num, "IS divisible by 7.")
+    else:
+        print(num, "is NOT divisible by 7.")
+        
+# Activity(3):
+# Create a while loop to randomly cycle through a list of card suits until a given suit is reached.sum
+# Create a variable called current_card and use a list method to randomly give it a value from the list every time the loop runs. Then compare this to the suit you want to find to stop the while loop.
+import random
+cards = ["Diamond", "Spade", "Club", "Heart"]
+current_card = random.choice(cards)
+my_card = "Heart"
+while my_card != current_card:
+    print(current_card)
+    current_card = random.choice(cards)
+print(f"You found {my_card}!")
